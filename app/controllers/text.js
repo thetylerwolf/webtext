@@ -28,6 +28,7 @@ exports.send = function() {
 exports.receive = function(req, res) {
     // console.log('req', req);
     // console.log('res', res);
+    var from = req.body.from;
     console.log(req.body);
     res.send({numba:req.body.phone});
     console.log('oy!');
